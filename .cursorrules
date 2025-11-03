@@ -1,0 +1,166 @@
+# Cursor Rules for Coffee Workspace
+
+## Project Overview
+This is an Nx monorepo containing:
+- **Backend**: .NET 8.0 Web API (`apps/api/`)
+- **Frontend**: React Router v7 app (`apps/coffee/`) and web app (`apps/web/`)
+- **Package Manager**: Bun
+- **Build Tool**: Vite for frontend, .NET SDK for backend
+
+## General Guidelines
+
+### Code Style
+- Use TypeScript strict mode for all TypeScript files
+- Follow existing code patterns and conventions
+- Maintain consistency across the codebase
+- Prefer functional components in React
+- Use SCSS modules for styling (`.module.scss`)
+- Keep files focused and maintainable
+
+### File Organization
+- Follow Nx project structure conventions
+- Keep components, routes, and utilities in appropriate directories
+- Use TypeScript path aliases when available
+- Group related files together
+
+## C# / .NET Backend (`apps/api/`)
+
+### Best Practices
+- Use `record` types for DTOs and data models (immutable by default)
+- Use `ApiController` attribute for controller classes
+- Follow RESTful conventions for route naming
+- Use dependency injection for all services
+- Keep controllers thin - delegate business logic to services
+- Use nullable reference types (`Nullable` enabled)
+- Use implicit usings where appropriate
+
+### Code Style
+- Use `IEnumerable<T>` for collections in public APIs
+- Use camelCase for JSON serialization (configured in Program.cs)
+- Use `ILogger<T>` for logging
+- Follow C# naming conventions (PascalCase for public members)
+
+### Controllers
+- Place controllers in `Controllers/` directory
+- Use `[Route("[controller]")]` attribute pattern
+- Use appropriate HTTP method attributes (`[HttpGet]`, `[HttpPost]`, etc.)
+- Return appropriate status codes
+
+### Configuration
+- API runs on `http://localhost:5000`
+- CORS is configured for frontend ports (4200, 5173, 3000)
+- Swagger is enabled in development mode
+
+## TypeScript / React Frontend
+
+### React Router v7 (`apps/coffee/`)
+- Use file-based routing with React Router v7 conventions
+- Place route files in `app/routes/` directory
+- Use TypeScript for all components and utilities
+- Prefer React 19 patterns and features
+
+### General React
+- Use functional components with hooks
+- Prefer named exports for components
+- Use TypeScript interfaces/types for props
+- Keep components small and focused
+- Use React hooks appropriately (`useState`, `useEffect`, etc.)
+
+### Styling
+- Use SCSS modules (`.module.scss`) for component styles
+- Import styles as: `import styles from './component.module.scss'`
+- Use class names from imported styles object
+- Follow BEM-like naming conventions if needed
+
+### TypeScript
+- Use strict mode TypeScript configuration
+- Prefer `interface` over `type` for object shapes
+- Use proper typing for all variables, functions, and components
+- Avoid `any` - use `unknown` or proper types instead
+- Use utility types when appropriate (`Pick`, `Omit`, `Partial`, etc.)
+
+### Testing
+- Use Vitest for testing
+- Place test files next to source files or in `tests/` directory
+- Use `@testing-library/react` for React component testing
+- Write meaningful test descriptions
+
+## Nx Monorepo
+
+### Project Structure
+- Each app is in `apps/` directory
+- Use Nx generators for creating new components, libraries, and apps
+- Follow Nx project naming conventions (`@coffee/app-name`)
+
+### Commands
+- Use `nx` CLI for running tasks
+- Common targets: `build`, `serve`, `test`, `lint`, `typecheck`
+- Use `nx run-many` for running tasks across multiple projects
+
+### Dependencies
+- Shared dependencies go in root `package.json`
+- Project-specific dependencies go in app-specific `package.json`
+- Use workspace protocol for internal dependencies
+
+## Development Workflow
+
+### Running Projects
+- Backend: Use Nx serve target or run .NET directly
+- Frontend: Use Nx serve target or Vite dev server
+- Use `nx run-many` to run multiple projects in parallel
+
+### Code Quality
+- Run linters before committing: `nx lint`
+- Fix ESLint errors promptly
+- Use Prettier for code formatting
+- Maintain TypeScript strict mode compliance
+
+### API Integration
+- API base URL: `http://localhost:5000`
+- Use camelCase for JSON request/response bodies
+- Handle CORS properly (already configured)
+- Use async/await for API calls
+
+## When Adding New Features
+
+### Backend
+1. Create controller in `apps/api/Controllers/`
+2. Create DTOs using `record` types
+3. Add services if needed (dependency injection)
+4. Update Swagger documentation if applicable
+5. Follow RESTful conventions
+
+### Frontend
+1. Create route file in `app/routes/` (for React Router app)
+2. Create components in appropriate directories
+3. Add styles using SCSS modules
+4. Type all props and state properly
+5. Handle loading and error states
+6. Connect to API endpoints
+
+## Testing
+- Write tests for critical functionality
+- Use Vitest for frontend tests
+- Use xUnit/NUnit for .NET tests (if added)
+- Maintain good test coverage
+
+## Documentation
+- Add JSDoc comments for complex functions
+- Add XML comments for public C# APIs
+- Keep README updated with project-specific notes
+- Document API endpoints if not using Swagger
+
+## Performance
+- Use React.memo for expensive components when needed
+- Avoid unnecessary re-renders
+- Use proper dependency arrays in hooks
+- Consider code splitting for large apps
+- Optimize bundle size
+
+## Security
+- Validate all API inputs
+- Use parameterized queries (when using database)
+- Sanitize user inputs
+- Follow CORS best practices (already configured)
+- Keep dependencies updated
+
