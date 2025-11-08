@@ -1,5 +1,5 @@
 {
-  "name": "@org/coffee",
+  "name": "@coffee/coffee",
   "private": true,
   "type": "module",
   "scripts": {},

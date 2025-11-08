@@ -1,0 +1,376 @@
+{
+  "apps/coffee": {
+    "root": [
+      "apps/coffee/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "apps/coffee/tsconfig.app.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.typecheck.dependsOn": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.typecheck.options": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.typecheck.cache": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.typecheck.inputs": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.typecheck.outputs": [
+      "apps/coffee/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.syncGenerators": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.typecheck.metadata": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.typecheck.executor": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.typecheck.options.cwd": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.typecheck.options.command": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.typecheck.metadata.technologies": [
+      "apps/coffee/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.metadata.technologies.0": [
+      "apps/coffee/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.metadata.description": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.typecheck.metadata.help": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.typecheck.metadata.help.command": [
+      "apps/coffee/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.metadata.help.example": [
+      "apps/coffee/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "projectType": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.build": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.build.cache": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.build.dependsOn": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.build.inputs": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.build.outputs": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.build.options": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.build.syncGenerators": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.build.executor": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.build.options.cwd": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.build.options.command": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.dev": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.dev.continuous": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.dev.options": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.dev.syncGenerators": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.dev.executor": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.dev.options.cwd": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.dev.options.command": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.start": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.start.continuous": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.start.dependsOn": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.start.options": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.start.syncGenerators": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.start.executor": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.start.options.cwd": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.start.options.command": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.typecheck.metadata.technologies.1": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.build-deps": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.build-deps.dependsOn": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.watch-deps": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.watch-deps.continuous": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.watch-deps.dependsOn": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.watch-deps.executor": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.watch-deps.options": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.watch-deps.options.command": [
+      "apps/coffee/react-router.config.ts",
+      "@nx/react/router-plugin"
+    ],
+    "targets.lint": [
+      "apps/coffee/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.cache": [
+      "apps/coffee/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options": [
+      "apps/coffee/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.inputs": [
+      "apps/coffee/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.outputs": [
+      "apps/coffee/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata": [
+      "apps/coffee/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.executor": [
+      "apps/coffee/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.cwd": [
+      "apps/coffee/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.command": [
+      "apps/coffee/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies": [
+      "apps/coffee/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies.0": [
+      "apps/coffee/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.description": [
+      "apps/coffee/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help": [
+      "apps/coffee/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.command": [
+      "apps/coffee/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.example": [
+      "apps/coffee/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.test": [
+      "apps/coffee/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.test.options": [
+      "apps/coffee/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.test.cache": [
+      "apps/coffee/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.test.inputs": [
+      "apps/coffee/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.test.outputs": [
+      "apps/coffee/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.test.metadata": [
+      "apps/coffee/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.test.executor": [
+      "apps/coffee/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.test.options.cwd": [
+      "apps/coffee/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.test.options.command": [
+      "apps/coffee/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.test.metadata.technologies": [
+      "apps/coffee/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.test.metadata.technologies.0": [
+      "apps/coffee/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.test.metadata.description": [
+      "apps/coffee/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.test.metadata.help": [
+      "apps/coffee/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.test.metadata.help.command": [
+      "apps/coffee/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.test.metadata.help.example": [
+      "apps/coffee/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "name": [
+      "apps/coffee/package.json",
+      "nx/core/package-json"
+    ],
+    "tags": [
+      "apps/coffee/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "apps/coffee/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "apps/coffee/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "apps/coffee/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "apps/coffee/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "apps/coffee/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "11312136864463707841apps/coffee/react-router.config.ts": {
+    "targets": {
+      "build": {
+        "cache": true,
+        "dependsOn": [
+          "^build"
+        ],
+        "inputs": [
+          "production",
+          "^production",
+          {
+            "externalDependencies": [
+              "@react-router/dev"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/apps/coffee/build/client",
+          "{workspaceRoot}/apps/coffee/build/server"
+        ],
+        "command": "react-router build",
+        "options": {
+          "cwd": "apps/coffee"
+        },
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ]
+      },
+      "dev": {
+        "continuous": true,
+        "command": "react-router dev",
+        "options": {
+          "cwd": "apps/coffee"
+        },
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ]
+      },
+      "start": {
+        "continuous": true,
+        "dependsOn": [
+          "build"
+        ],
+        "command": "react-router-serve build/server/index.js",
+        "options": {
+          "cwd": "apps/coffee"
+        },
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ]
+      },
+      "typecheck": {
+        "cache": true,
+        "inputs": [
+          "production",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "command": "tsc --build --emitDeclarationOnly",
+        "options": {
+          "cwd": "apps/coffee"
+        },
+        "metadata": {
+          "description": "Runs type-checking for the project.",
+          "technologies": [
+            "typescript"
+          ],
+          "help": {
+            "command": "bun tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        },
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ]
+      },
+      "build-deps": {
+        "dependsOn": [
+          "^build"
+        ]
+      },
+      "watch-deps": {
+        "continuous": true,
+        "dependsOn": [
+          "build-deps"
+        ],
+        "command": "bun nx watch --projects @coffee/coffee --includeDependentProjects -- bun nx build-deps @coffee/coffee"
+      }
+    },
+    "metadata": {},
+    "projectType": "application"
+  }
+}

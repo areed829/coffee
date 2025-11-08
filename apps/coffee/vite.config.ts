@@ -27,7 +27,7 @@ export default defineConfig(() => ({
     },
   },
   test: {
-    name: '@org/coffee',
+    name: '@coffee/coffee',
     watch: false,
     globals: true,
     environment: 'jsdom',

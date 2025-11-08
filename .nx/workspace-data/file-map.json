@@ -1,0 +1,227 @@
+{
+  "version": "6.0",
+  "nxVersion": "22.0.2",
+  "pathMappings": {},
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/js/typescript",
+      "options": {
+        "typecheck": {
+          "targetName": "typecheck"
+        },
+        "build": {
+          "targetName": "build",
+          "configName": "tsconfig.lib.json",
+          "buildDepsName": "build-deps",
+          "watchDepsName": "watch-deps"
+        }
+      }
+    },
+    {
+      "name": "@nx/react/router-plugin",
+      "options": {
+        "buildTargetName": "build",
+        "devTargetName": "dev",
+        "startTargetName": "start",
+        "watchDepsTargetName": "watch-deps",
+        "buildDepsTargetName": "build-deps",
+        "typecheckTargetName": "typecheck"
+      }
+    },
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    },
+    {
+      "name": "@nx/vite/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "testTargetName": "test",
+        "serveTargetName": "serve",
+        "devTargetName": "dev",
+        "previewTargetName": "preview",
+        "serveStaticTargetName": "serve-static",
+        "typecheckTargetName": "typecheck",
+        "buildDepsTargetName": "build-deps",
+        "watchDepsTargetName": "watch-deps"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".gitignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": "AGENTS.md",
+        "hash": "14662218034062734820"
+      },
+      {
+        "file": "README.md",
+        "hash": "9229036067734366694"
+      },
+      {
+        "file": "bun.lock",
+        "hash": "4630986796933526772"
+      },
+      {
+        "file": "eslint.config.mjs",
+        "hash": "10342242253953339344"
+      },
+      {
+        "file": "nx.json",
+        "hash": "11035500332834706438"
+      },
+      {
+        "file": "package.json",
+        "hash": "12471541265608257245"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "3138005493953320437"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "1342221245271161084"
+      },
+      {
+        "file": "vitest.workspace.ts",
+        "hash": "4665328684042819579"
+      }
+    ],
+    "projectFileMap": {
+      "@coffee/coffee": [
+        {
+          "file": "apps/coffee/.gitignore",
+          "hash": "1322857172772037533"
+        },
+        {
+          "file": "apps/coffee/app/app-nav.tsx",
+          "hash": "10177948640141916258",
+          "deps": [
+            "npm:react-router@7.9.5"
+          ]
+        },
+        {
+          "file": "apps/coffee/app/app.module.scss",
+          "hash": "8887387885984320532"
+        },
+        {
+          "file": "apps/coffee/app/app.tsx",
+          "hash": "16156348840921240689"
+        },
+        {
+          "file": "apps/coffee/app/entry.client.tsx",
+          "hash": "14020779709371897962",
+          "deps": [
+            "npm:react-router@7.9.5",
+            "npm:react@19.2.0",
+            "npm:react-dom@19.2.0"
+          ]
+        },
+        {
+          "file": "apps/coffee/app/entry.server.tsx",
+          "hash": "702601401085993791",
+          "deps": [
+            "npm:react-router@7.9.5",
+            "npm:@react-router/node@7.9.5",
+            "npm:isbot@4.4.0",
+            "npm:react-dom@19.2.0"
+          ]
+        },
+        {
+          "file": "apps/coffee/app/nx-welcome.tsx",
+          "hash": "18296590537071206435"
+        },
+        {
+          "file": "apps/coffee/app/root.tsx",
+          "hash": "13240290643875586017",
+          "deps": [
+            "npm:react-router@7.9.5"
+          ]
+        },
+        {
+          "file": "apps/coffee/app/routes.tsx",
+          "hash": "15982387245062999001",
+          "deps": [
+            "npm:@react-router/dev@7.9.5"
+          ]
+        },
+        {
+          "file": "apps/coffee/app/routes/about.tsx",
+          "hash": "124354424245877004"
+        },
+        {
+          "file": "apps/coffee/eslint.config.mjs",
+          "hash": "8789163670399984295",
+          "deps": [
+            "npm:@nx/eslint-plugin@22.0.2"
+          ]
+        },
+        {
+          "file": "apps/coffee/package.json",
+          "hash": "14316923134006286472",
+          "deps": [
+            "npm:@react-router/dev@7.9.5",
+            "npm:@types/node@20.19.9",
+            "npm:@types/react@19.2.2",
+            "npm:@types/react-dom@19.2.2",
+            "npm:@react-router/node@7.9.5",
+            "npm:@react-router/serve@7.9.5",
+            "npm:isbot@4.4.0",
+            "npm:react@19.2.0",
+            "npm:react-dom@19.2.0",
+            "npm:react-router@7.9.5"
+          ]
+        },
+        {
+          "file": "apps/coffee/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/coffee/react-router.config.ts",
+          "hash": "13167588060401889453",
+          "deps": [
+            "npm:@react-router/dev@7.9.5"
+          ]
+        },
+        {
+          "file": "apps/coffee/styles.scss",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "apps/coffee/tests/routes/_index.spec.tsx",
+          "hash": "16299363482387324565",
+          "deps": [
+            "npm:react-router@7.9.5",
+            "npm:@testing-library/react@16.3.0"
+          ]
+        },
+        {
+          "file": "apps/coffee/tsconfig.app.json",
+          "hash": "1549967867227589126"
+        },
+        {
+          "file": "apps/coffee/tsconfig.json",
+          "hash": "4588906849934509813"
+        },
+        {
+          "file": "apps/coffee/tsconfig.spec.json",
+          "hash": "16305818908628027731"
+        },
+        {
+          "file": "apps/coffee/vite.config.ts",
+          "hash": "10132764808899496516",
+          "deps": [
+            "npm:vite@7.2.2",
+            "npm:@react-router/dev@7.9.5"
+          ]
+        }
+      ]
+    }
+  },
+  "externalNodesHash": "18087035377906595331"
+}
